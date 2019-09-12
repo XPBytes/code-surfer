@@ -58,7 +58,7 @@ export function parseSteps(
     const focus = focusString
       ? parseFocus(focusString)
       : getDefaultFocus(prevLineKeys, lineKeys);
-    const { focusCenter, focusCount } = getFocusSize(focus);
+    const { focusCenter, focusCount } = focusString === "none" ? { focusCenter: Math.round(lineKeys.length) / 2, focusCount: lineKeys.length } : getFocusSize(focus);
     allSteps.push({
       lines: lineKeys,
       focus,

@@ -9,6 +9,10 @@ export function parseFocus(focus: string) {
     throw new Error("Focus cannot be empty");
   }
 
+  if (focus === "none") {
+    return {}
+  }
+
   try {
     const parts = focus.split(/,(?![^\[]*\])/g).map(parsePart);
     return fromEntries(flat(parts));
