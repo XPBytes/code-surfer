@@ -26,7 +26,7 @@
     "theme-ui": "^0.2.41"
   },
   "dependencies": {
-    "@code-surfer/step-parser": "3.0.0",
+    "@code-surfer/step-parser": "file:../step-parser",
     "@types/table": "^4.0.7",
     "@types/theme-ui": "^0.2.2",
     "array.prototype.flat": "^1.2.1",
