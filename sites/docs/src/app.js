@@ -6,9 +6,7 @@ import { CodeSurfer, nightOwl } from "@code-surfer/standalone";
 const steps = [
   {
     code: "doo",
-    subtitle: {
-      value: "With Code Surfer you can make Rad Code Slides, like this one"
-    },
+    subtitle: "With Code Surfer you can make Rad Code Slides, like this one",
     lang: "py"
   },
   {
